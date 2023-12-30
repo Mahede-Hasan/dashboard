@@ -1,0 +1,101 @@
+/* side nav style */
+
+.smt-side-nav {
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.smt-side-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+.smt-side-nav ul li {
+    list-style: none;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.smt-side-nav ul li a, .listing-count {
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.smt-side-nav ul li:hover {
+    background-color: lightgray;
+    transition: background-color 1s ease;
+    border-radius: 4px;
+}
+.smt-side-nav ul li:hover a, .listing-count{
+    color: black;
+}
+
+.dashboard-submit-btn{
+    border: 2px solid gray;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: gray;
+    color: white;
+    padding: 6px 1px;
+    margin: 2px 8px;
+    border-radius: 5px;
+}
+.dashboard-submit-btn:hover{
+    border: 2px solid gray;
+    background-color: transparent;
+    color: gray;
+    transition: all 0.8s ease;
+}
+
+.dashboard-logout-btn{
+    border: 2px solid rgb(195, 77, 50);
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(195, 77, 50);
+    color: white;
+    padding: 4px 1px;
+    margin: 2px 8px;
+    border-radius: 5px;
+}
+.dashboard-logout-btn:hover{
+    border: 2px solid rgb(195, 77, 50);
+    background-color: transparent;
+    color: rgb(195, 77, 50);
+    transition: all 0.8s ease;
+}
+
+/* My Listing */
+.search-listing-input{
+    background-color: rgba(232, 232, 232, 0.855) !important;
+    border: none !important;
+}
+input[type=search]{
+    box-sizing: border-box !important;
+    border: 3px solid transparent !important;
+    outline: none !important;
+}
+input[type=search]:focus{
+   border: 3px solid transparent !important;
+}
+
+.smt-nav-listing li a {
+    font-weight: 600;
+    padding: 15px !important;
+}
+
+.smt-nav-listing li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 27px;
+    text-decoration-thickness: 2px;
+}

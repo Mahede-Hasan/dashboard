@@ -1,7 +1,10 @@
+.main-container{
+    margin-top: 100px;
+}
 /* side nav style */
 
 .smt-side-nav {
-    width: 250px;
+    width: 300px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
@@ -29,7 +32,7 @@
     text-decoration: none;
     color: gray;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .smt-side-nav ul li:hover {
@@ -37,7 +40,7 @@
     transition: background-color 1s ease;
     border-radius: 4px;
 }
-.smt-side-nav ul li:hover a, .listing-count{
+.smt-side-nav ul li:hover a{
     color: black;
 }
 
@@ -90,7 +93,7 @@ input[type=search]:focus{
 }
 
 .smt-nav-listing li a {
-    font-weight: 600;
+    font-weight: 500;
     padding: 15px !important;
 }
 
@@ -98,4 +101,25 @@ input[type=search]:focus{
     text-decoration: underline;
     text-underline-offset: 27px;
     text-decoration-thickness: 2px;
+}
+
+.table-content th{
+    font-size: 12px;
+    color: rgb(162, 162, 162) !important;
+    padding-bottom: 25px !important;
+    padding-top: 25px !important;
+    border-top: 1px solid rgb(166, 166, 166);
+}
+
+.my-listing-table-content{
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+    padding-left: 20px !important;
+    font-size: 15px;
+    color: rgb(97, 97, 97) !important;
+}
+
+.my-listing-table-third-row{
+    height: 70px;
+    border-bottom: none;
 }

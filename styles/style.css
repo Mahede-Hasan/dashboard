@@ -38,12 +38,14 @@
     font-weight: 500;
 }
 
+
+
 .smt-side-nav ul li:hover {
     background-color: lightgray;
     transition: background-color 1s ease;
     border-radius: 4px;
-
 }
+
 
 .smt-side-nav ul li:hover a {
     color: black;
@@ -85,6 +87,9 @@
     transition: all 0.8s ease;
 }
 
+
+
+
 /* My Listing */
 .search-listing-input {
     background-color: rgba(232, 232, 232, 0.855) !important;
@@ -110,7 +115,27 @@ input[type=search]:focus {
     text-decoration: underline;
     text-underline-offset: 27px;
     text-decoration-thickness: 2px;
+    transition: all 1s ease;
 }
+
+.active{
+    text-decoration: underline !important;
+    text-underline-offset: 27px !important;
+    text-decoration-thickness: 2px !important;
+}
+
+.active-route{
+    color: blue !important;
+    background-color: skyblue !important;
+}
+
+.publish, .pending, .expired{
+    display: none;
+}
+
+/* .my-profile-page, .my-favorite-page, .my-announcement-page{
+    display: none;
+} */
 
 .table-content th {
     font-size: 12px;
@@ -130,10 +155,12 @@ input[type=search]:focus {
 
 .my-listing-table-third-row {
     height: 70px;
+    width: 100%;
     border-bottom: none;
 }
 
 /* My Profile */
+
 .form-box {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -156,4 +183,53 @@ input[type=search]:focus {
     background-color: rgb(186, 186, 186);
     color: black;
     transition: background 1s ease;
+}
+
+.select-photo{
+    padding-top: 60px;
+}
+
+.user-image{
+    width: 100px;
+    height: 100px;
+}
+
+/* favorite list style */
+
+.favorite-list-content{
+    padding: 30px 20px;
+    color: rgb(152, 151, 151);
+    font-size: 15px;
+}
+
+/* announcement page */
+
+.smt-my-announcement{
+    padding: 30px 20px;
+    color: rgb(152, 151, 151);
+    font-size: 15px;
+}
+
+/* .menuItem{
+    display: none;
+} */
+
+/* responsive style */
+
+@media only screen and (max-width: 1080px) {
+    .smt-my-profile{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .select-photo{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and(min-width: 400px) and (max-width: 720px) {
+    .smt-side-nav{
+        display: none !important;
+    }
 }

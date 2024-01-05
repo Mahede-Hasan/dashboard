@@ -1,11 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .main-container {
-    margin-top: 100px;
+ margin: 80px 60px;
 }
 
 /* side nav style */
 
+.res-btn{
+    display: none !important;
+}
+
 .smt-side-nav {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
     height: 370px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
@@ -118,24 +129,23 @@ input[type=search]:focus {
     transition: all 1s ease;
 }
 
-.active{
+.active {
     text-decoration: underline !important;
     text-underline-offset: 27px !important;
     text-decoration-thickness: 2px !important;
 }
 
-.active-route{
+.active-route {
     color: blue !important;
     background-color: skyblue !important;
 }
 
-.publish, .pending, .expired{
+.publish,
+.pending,
+.expired {
     display: none;
 }
 
-/* .my-profile-page, .my-favorite-page, .my-announcement-page{
-    display: none;
-} */
 
 .table-content th {
     font-size: 12px;
@@ -160,17 +170,26 @@ input[type=search]:focus {
 }
 
 /* My Profile */
+.smt-main-section{
+    margin-left: 24px !important;
+}
+
+.smt-my-profile-area{
+   margin-left: 14px;
+   margin-right: 14px;
+}
 
 .form-box {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    margin-left: 0;
 }
 
 .social-profile-header {
     font-size: 18px;
 }
 
-.form-dashboard-button{
+.form-dashboard-button {
     border: 2px solid rgb(94, 94, 94);
     background-color: rgb(94, 94, 94);
     border-radius: 4px;
@@ -178,25 +197,26 @@ input[type=search]:focus {
     width: 100%;
     font-size: 16px;
 }
-.form-dashboard-button:hover{
+
+.form-dashboard-button:hover {
     border: 2px solid rgb(186, 186, 186);
     background-color: rgb(186, 186, 186);
     color: black;
     transition: background 1s ease;
 }
 
-.select-photo{
+.select-photo {
     padding-top: 60px;
 }
 
-.user-image{
+.user-image {
     width: 100px;
     height: 100px;
 }
 
 /* favorite list style */
 
-.favorite-list-content{
+.favorite-list-content {
     padding: 30px 20px;
     color: rgb(152, 151, 151);
     font-size: 15px;
@@ -204,7 +224,7 @@ input[type=search]:focus {
 
 /* announcement page */
 
-.smt-my-announcement{
+.smt-my-announcement {
     padding: 30px 20px;
     color: rgb(152, 151, 151);
     font-size: 15px;
@@ -216,20 +236,69 @@ input[type=search]:focus {
 
 /* responsive style */
 
-@media only screen and (max-width: 1080px) {
-    .smt-my-profile{
+@media only screen and (max-width: 1160px) {
+    .smt-my-profile {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .select-photo{
+    .select-photo {
         margin-bottom: 20px;
+    }
+    .form-box{
+        width: 80% !important;
+        padding: 0;
+    }
+
+    .smt-main-section{
+        margin-left: 0px !important;
+    }
+    .smt-my-profile-area{
+        margin-left: 0px
+     }
+
+     .side-menu-container{
+        display: none !important;
+     }
+     .smt-side-nav{
+        display: none !important;
+     }
+
+     .res-btn{
+        display: block !important;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        color: gray;
+        cursor: pointer;
+    }
+    .smt-side-nav {
+        display: none !important;
     }
 }
 
-@media only screen and(min-width: 400px) and (max-width: 720px) {
-    .smt-side-nav{
+@media only screen and (max-width: 720px) and (min-width: 400px) {
+    .form-box{
+        width: 95% !important;
+        padding: 0;
+    }
+    .smt-main-section{
+        margin-left: 0px !important;
+    }
+    .smt-my-profile-area{
+        margin-left: 0;
+     }
+     .smt-side-nav {
         display: none !important;
+
+    }
+    .res-btn{
+        display: block !important;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        color: gray;
+        cursor: pointer;
     }
 }

@@ -1,24 +1,25 @@
 
 // side nav route
-const clickListingNav=()=>{
+const clickMyListing=()=>{
     document.querySelector('.my-listing-page').style.display = 'block'
     document.querySelector('.my-profile-page').style.display = 'none'
     document.querySelector('.my-favorite-page').style.display = 'none'
     document.querySelector('.my-announcement-page').style.display = 'none'
+
 }
-const clickProfile=()=>{
+const clickMyProfile=()=>{
     document.querySelector('.my-listing-page').style.display = 'none'
     document.querySelector('.my-favorite-page').style.display = 'none'
     document.querySelector('.my-announcement-page').style.display = 'none'
     document.querySelector('.my-profile-page').style.display = 'block'
 }
-const clickFavorite=()=>{
+const clickMyFavorite=()=>{
     document.querySelector('.my-listing-page').style.display = 'none'
     document.querySelector('.my-profile-page').style.display = 'none'
     document.querySelector('.my-announcement-page').style.display = 'none'
     document.querySelector('.my-favorite-page').style.display = 'block'
 }
-const clickAnnouncement=()=>{
+const clickMyAnnouncement=()=>{
     document.querySelector('.my-listing-page').style.display = 'none'
     document.querySelector('.my-profile-page').style.display = 'none'
     document.querySelector('.my-favorite-page').style.display = 'none'
@@ -26,7 +27,7 @@ const clickAnnouncement=()=>{
 }
 
 // side nav active route
-const sideNavLinks = document.querySelectorAll('.single-menu');
+const sideNavLinks = document.querySelectorAll('.nav-links');
 sideNavLinks.forEach(sideNavLink=>{
     sideNavLink.addEventListener('click', ()=>{
         document.querySelector('.active-route')?.classList.remove('active-route');

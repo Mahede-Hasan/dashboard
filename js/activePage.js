@@ -45,7 +45,7 @@ navLinkEls.forEach(navLinkEl=>{
     })
 })
 
-// my listing nav rout
+// my listing nav route
 const clickAllListing=()=>{
     document.querySelector('.all-listing').style.display = 'block'
     document.querySelector('.publish').style.display = 'none'

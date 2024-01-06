@@ -40,6 +40,7 @@ body {
     text-decoration: none;
     color: gray;
     width: 100%;
+    font-weight: 600;
 }
 
 /* side nav button */
@@ -80,9 +81,12 @@ body {
 }
 
 /* side nav page */
-.my-profile-page,
-.my-favorite-page,
-.my-announcement-page {
+#my-listing-page{
+    display: block;
+}
+#my-profile-page,
+#my-favorite-page,
+#my-announcement-page {
     display: none;
 }
 
@@ -244,6 +248,7 @@ input[type=search]:focus {
     .nav-lists li a {
         font-size: 12px;
     }
+
     .navbar-container {
         box-shadow: none;
         position: absolute;
@@ -251,7 +256,8 @@ input[type=search]:focus {
         top: 0;
         width: 400px !important;
     }
-    .navbar-nav-side{
+
+    .navbar-nav-side {
         padding-top: 10px;
         background-color: rgb(223, 223, 223);
         position: absolute;
@@ -260,16 +266,18 @@ input[type=search]:focus {
         width: 280px !important;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     }
+
     .nav-lists li a {
         text-decoration: none;
         color: rgb(1, 0, 0);
         width: 100%;
     }
-    .side-nav-icon{
-       position: absolute;
-       top: 0;
-       left: 0;
-        }
+
+    .side-nav-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 @media only screen and (max-width: 720px) and (min-width: 360px) {
@@ -285,7 +293,8 @@ input[type=search]:focus {
     .smt-my-profile-area {
         margin-left: 0;
     }
-    .side-nav-icon{
+
+    .side-nav-icon {
         width: 20px;
         height: 20px;
         position: absolute !important;

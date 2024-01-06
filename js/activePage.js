@@ -1,29 +1,29 @@
 
 // side nav route
 const clickMyListing=()=>{
-    document.querySelector('.my-listing-page').style.display = 'block'
-    document.querySelector('.my-profile-page').style.display = 'none'
-    document.querySelector('.my-favorite-page').style.display = 'none'
-    document.querySelector('.my-announcement-page').style.display = 'none'
+    document.querySelector('#my-listing-page').style.display = 'block'
+    document.querySelector('#my-profile-page').style.display = 'none'
+    document.querySelector('#my-favorite-page').style.display = 'none'
+    document.querySelector('#my-announcement-page').style.display = 'none'
 
 }
 const clickMyProfile=()=>{
-    document.querySelector('.my-listing-page').style.display = 'none'
-    document.querySelector('.my-favorite-page').style.display = 'none'
-    document.querySelector('.my-announcement-page').style.display = 'none'
-    document.querySelector('.my-profile-page').style.display = 'block'
+    document.querySelector('#my-listing-page').style.display = 'none'
+    document.querySelector('#my-favorite-page').style.display = 'none'
+    document.querySelector('#my-announcement-page').style.display = 'none'
+    document.querySelector('#my-profile-page').style.display = 'block'
 }
 const clickMyFavorite=()=>{
-    document.querySelector('.my-listing-page').style.display = 'none'
-    document.querySelector('.my-profile-page').style.display = 'none'
-    document.querySelector('.my-announcement-page').style.display = 'none'
-    document.querySelector('.my-favorite-page').style.display = 'block'
+    document.querySelector('#my-listing-page').style.display = 'none'
+    document.querySelector('#my-profile-page').style.display = 'none'
+    document.querySelector('#my-announcement-page').style.display = 'none'
+    document.querySelector('#my-favorite-page').style.display = 'block'
 }
 const clickMyAnnouncement=()=>{
-    document.querySelector('.my-listing-page').style.display = 'none'
-    document.querySelector('.my-profile-page').style.display = 'none'
-    document.querySelector('.my-favorite-page').style.display = 'none'
-    document.querySelector('.my-announcement-page').style.display = 'block'
+    document.querySelector('#my-listing-page').style.display = 'none'
+    document.querySelector('#my-profile-page').style.display = 'none'
+    document.querySelector('#my-favorite-page').style.display = 'none'
+    document.querySelector('#my-announcement-page').style.display = 'block'
 }
 
 // side nav active route

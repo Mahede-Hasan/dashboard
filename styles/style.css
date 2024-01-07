@@ -76,7 +76,7 @@ body {
 
 /* side navbar active route */
 
-.active-route {
+.active-route a{
     color: black !important;
 }
 
@@ -95,6 +95,7 @@ body {
 .search-listing-input {
     background-color: rgba(232, 232, 232, 0.855) !important;
     border: none !important;
+    padding: 1px 50px;
 }
 
 input[type=search] {
@@ -110,6 +111,7 @@ input[type=search]:focus {
 .smt-nav-listing li a {
     font-weight: 500;
     padding: 15px !important;
+    font-size: 16px;
 }
 
 .smt-nav-listing li a:hover {
@@ -132,12 +134,14 @@ input[type=search]:focus {
 }
 
 
-.table-content th {
-    font-size: 12px;
-    color: rgb(162, 162, 162) !important;
-    padding-bottom: 25px !important;
-    padding-top: 25px !important;
-    border-top: 1px solid rgb(166, 166, 166);
+.table-head-content th {
+    font-size: 14px !important;
+    color: rgb(118, 117, 117) !important;
+
+}
+
+th{
+    font-size: 16px !important;
 }
 
 .my-listing-table-content {
@@ -221,6 +225,25 @@ input[type=search]:focus {
 
 /* responsive style */
 
+@media only screen and (max-width: 1080px) {
+    .smt-nav-listing li a {
+        font-weight: 600 !important;
+        padding: 15px !important;
+        font-size: 12px !important;
+    }
+    .search-listing-input {
+
+        padding: 1px 35px;
+    }
+    .table-head-content th {
+        font-size: 13px !important;
+    }
+
+    .table-data-content td{
+        font-size: 12px;
+    }
+}
+
 @media only screen and (max-width: 988px) {
     .smt-my-profile {
         display: flex;
@@ -278,6 +301,11 @@ input[type=search]:focus {
         top: 0;
         left: 0;
     }
+
+    .table-head-content th {
+        font-size: 12px !important;
+    }
+
 }
 
 @media only screen and (max-width: 720px) and (min-width: 360px) {

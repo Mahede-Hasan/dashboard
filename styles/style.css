@@ -145,8 +145,7 @@ th{
 }
 
 .my-listing-table-content {
-    padding-top: 25px !important;
-    padding-bottom: 25px !important;
+    padding-top: 30px !important;
     padding-left: 20px !important;
     font-size: 15px;
     color: rgb(97, 97, 97) !important;
@@ -157,6 +156,44 @@ th{
     width: 100%;
     border-bottom: none;
 }
+
+.listing-table-img{
+    width: 70px;
+    height: 30px;
+}
+
+.table-data-content td{
+    padding-left: 0 !important;
+}
+
+.pending-content{
+    padding: 4px 4px;
+    background-color: rgba(255, 140, 0, 0.474);
+    margin-left: 6px;
+    border-radius: 4px;
+    color: orangered;
+}
+
+.edit-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.my-listing-edit{
+    float: right;
+    padding-right: 20px !important;
+    display: flex;
+    margin-top: 8px;
+}
+
+.delete-list{
+    padding: 4px 10px;
+    background-color: rgba(238, 65, 22, 0.865);
+border-radius: 4px;
+    margin-left: 15px;
+    color: white;
+}
+
 
 /* My Profile */
 .smt-main-section {
@@ -219,9 +256,6 @@ th{
     font-size: 15px;
 }
 
-/* .menuItem{
-    display: none;
-} */
 
 /* responsive style */
 

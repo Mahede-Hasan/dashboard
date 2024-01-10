@@ -12,9 +12,10 @@ body {
     width: 250px !important;
     height: 350px !important;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    z-index: 100;
 }
 
-.navbar-nav-side{
+.navbar-nav-side {
     margin: 1px 10px !important;
 }
 
@@ -42,8 +43,15 @@ body {
     font-weight: 600;
 }
 
+.nav-btn {
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+
 /* side nav button */
-/* old button styles */
+/* old button styles remove */
 /* .listing-submit-btn {
     border: 2px solid rgb(118, 117, 117);
     color: white;
@@ -77,7 +85,7 @@ body {
 
 
 /* new anchor button style here */
-.listing-submit-btn{
+.listing-submit-btn {
     text-decoration: none;
     background-color: gray;
     border: 2px solid gray;
@@ -87,7 +95,8 @@ body {
     text-align: center;
     font-weight: 500;
 }
-.listing-submit-btn:hover{
+
+.listing-submit-btn:hover {
     background-color: transparent !important;
     color: gray;
     transition: all 1s ease;
@@ -114,14 +123,15 @@ body {
 
 /* side navbar active route */
 
-.active-route a{
+.active-route a {
     color: black !important;
 }
 
 /* side nav page */
-#my-listing-page{
+#my-listing-page {
     display: block;
 }
+
 #my-profile-page,
 #my-favorite-page,
 #my-announcement-page {
@@ -130,11 +140,18 @@ body {
 
 
 /* My Listing */
+.my-listing-menubar {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
 .search-listing-input {
     background-color: rgba(232, 232, 232, 0.855) !important;
     border: none !important;
     padding: 1px 50px;
 }
+
+
 
 input[type=search] {
     box-sizing: border-box !important;
@@ -178,7 +195,7 @@ input[type=search]:focus {
 
 }
 
-th{
+th {
     font-size: 16px !important;
 }
 
@@ -195,17 +212,17 @@ th{
     border-bottom: none;
 }
 
-.listing-table-img{
+.listing-table-img {
     width: 70px;
     height: 30px;
 }
 
-.table-data-content td{
+.table-data-content td {
     padding-left: 0 !important;
     border-top: 1px solid rgba(195, 195, 195, 0.612);
 }
 
-.pending-content{
+.pending-content {
     padding: 4px 4px;
     background-color: rgba(255, 140, 0, 0.474);
     margin-left: 6px;
@@ -213,22 +230,22 @@ th{
     color: orangered;
 }
 
-.edit-icon{
+.edit-icon {
     width: 20px;
     height: 20px;
 }
 
-.my-listing-edit{
+.my-listing-edit {
     float: right;
     padding-right: 20px !important;
     display: flex;
     margin-top: 8px;
 }
 
-.delete-list{
+.delete-list {
     padding: 4px 10px;
     background-color: rgba(238, 65, 22, 0.865);
-border-radius: 4px;
+    border-radius: 4px;
     margin-left: 15px;
     color: white;
 }
@@ -239,20 +256,26 @@ border-radius: 4px;
     margin-left: 24px !important;
 }
 
-.full-form-container{
+.full-form-container {
     width: 100% !important;
-    padding: 0 50px !important;
+    padding: 0 20px !important;
     display: flex;
 }
-.input-container{
+
+.input-container {
     width: 70% !important;
 }
 
 
 .select-photo {
-    padding-top: 150px;
+    margin-top: 150px;
+    padding-top: 70px;
     margin-left: 20px !important;
-    width: 30% !important;
+    margin-right: 20px !important;
+    width: 300px !important;
+    height: 300px;
+    background-color: rgba(207, 207, 207, 0.775);
+    border-radius: 10px;
 }
 
 .smt-my-profile-area {
@@ -312,45 +335,92 @@ border-radius: 4px;
 
 /* responsive style */
 
+@media only screen and (max-width: 1300px) {
+    .select-photo {
+        margin-top: 150px;
+        padding-top: 70px;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        width: 240px !important;
+        height: 240px;
+        background-color: rgba(207, 207, 207, 0.775);
+        border-radius: 10px;
+    }
+}
+
 @media only screen and (max-width: 1080px) {
     .smt-nav-listing li a {
         font-weight: 600 !important;
         padding: 15px !important;
         font-size: 12px !important;
     }
+
     .search-listing-input {
 
         padding: 1px 35px;
     }
+
     .table-head-content th {
         font-size: 13px !important;
     }
 
-    .table-data-content td{
-        font-size: 12px;
+    .table-data-content td {
+        font-size: 14px;
     }
 
-    .full-form-container{
+    .full-form-container {
         width: 100% !important;
         padding: 0 0 !important;
         display: flex;
         flex-direction: column-reverse;
     }
-    .input-container{
-        width: 90% !important;
+
+    .input-container {
+        width: 100% !important;
     }
-    
-    
+
+
     .select-photo {
-        padding-bottom: 50px;
-        margin:30px auto !important;
-        width: 50% !important;
-        border-radius: 50%;
-        background-color: rgba(208, 208, 208, 0.535);
+        margin: 30px auto !important;
+        padding-top: 70px;
     }
+
+    .smt-my-favorite-list{
+        
+    }
+
+    .favorite-list-content{
+        width: 92%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        margin: 10px auto !important;
+    }
+
 }
 
 @media only screen and (max-width: 988px) {
+    .smt-nav-listing li a:hover {
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        text-decoration-thickness: 1px;
+        transition: all 1s ease;
+    }
+    
+    .active {
+        text-decoration: underline !important;
+        text-underline-offset: 15px !important;
+        text-decoration-thickness: 1px !important;
+    }
+
+    .my-listing-menubar {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: left !important;
+        width: 350px !important;
+        padding-bottom: 30px !important;
+    }
     .smt-my-profile {
         display: flex;
         flex-direction: column-reverse;
@@ -358,20 +428,20 @@ border-radius: 4px;
     }
 
     .select-photo {
-        padding-bottom: 50px;
-        margin:30px auto !important;
+        padding-bottom: 70px !important;
+        margin: 30px auto !important;
         width: 75% !important;
-        border-radius: 50%;
-        background-color: rgba(208, 208, 208, 0.535);
+    
     }
 
     .form-box {
-        width: 80% !important;
+        width: 90% !important;
         padding: 0;
     }
 
     .smt-main-section {
         margin-left: 0px !important;
+        width: 100% !important;
     }
 
     .smt-my-profile-area {
@@ -380,6 +450,9 @@ border-radius: 4px;
 
     .nav-lists li a {
         font-size: 12px;
+    }
+    .smt-main-section {
+        margin-left: 0px !important;
     }
 
     .navbar-container {
@@ -405,28 +478,50 @@ border-radius: 4px;
         color: rgb(1, 0, 0);
         width: 100%;
     }
-
     .side-nav-icon {
-        position: absolute;
-        top: 0;
-        left: 0;
+        width: 20px;
+        height: 20px;
+        position: absolute !important;
+        left: 20px;
+        top: -60px !important;
     }
 
+    .main-container {
+        margin: 80px 15px !important;
+    }
+
+    .navbar-container {
+        display: block !important;
+    }
+
+
     .table-head-content th {
-        font-size: 12px !important;
+        font-size: 14px !important;
+    }
+    .smt-nav-listing li a {
+        font-weight: 600 !important;
+        padding: 15px !important;
+        font-size: 13px !important;
     }
 
 }
 
-@media only screen and (max-width: 720px) and (min-width: 360px) {
+@media only screen and (max-width: 960px) and (min-width: 360px) {
+    .smt-nav-listing li a {
+        font-weight: 600 !important;
+        padding: 15px !important;
+        font-size: 13px !important;
+    }
 
     .select-photo {
         padding-bottom: 120px !important;
-        margin:30px auto !important;
-        width: 320px !important;
-        height: 320px !important;
-        background-color: transparent;
+        margin: 30px auto !important;
+        width: 250px !important;
+        height: 250px !important;
+        background-color: rgba(198, 198, 198, 0.586);
+        border-radius: 10px;
     }
+
     .form-box {
         width: 95% !important;
         padding: 0;
@@ -444,11 +539,31 @@ border-radius: 4px;
         width: 20px;
         height: 20px;
         position: absolute !important;
-        left: 0;
-        top: 0 !important;
+        left: 20px;
+        top: -60px !important;
     }
 
     .main-container {
-        margin: 80px 20px;
+        margin: 80px 15px !important;
+    }
+
+    .navbar-container {
+        display: block !important;
+    }
+
+    .smt-my-announcement {
+        width: 100%;
+    }
+
+    .table-data-content td {
+        font-size: 12px !important;
+    }
+
+    .expired, .pending, .publish, .all-listing {
+        width: 800px !important;
+    }
+    .expired-container, .all-listing-container,.publish-container, .pending-container{
+        overflow-x: scroll !important;
+        scroll-behavior: smooth;
     }
 }

@@ -385,9 +385,6 @@ th {
         padding-top: 70px;
     }
 
-    .smt-my-favorite-list{
-        
-    }
 
     .favorite-list-content{
         width: 92%;
@@ -417,9 +414,16 @@ th {
     .my-listing-menubar {
         display: flex !important;
         flex-direction: column !important;
-        justify-content: left !important;
+        
         width: 350px !important;
         padding-bottom: 30px !important;
+    }
+
+    .smt-nav-listing{
+        display: flex;
+        flex-direction: column;
+        justify-content: left !important;
+
     }
     .smt-my-profile {
         display: flex;
@@ -566,4 +570,12 @@ th {
         overflow-x: scroll !important;
         scroll-behavior: smooth;
     }
+
+    .my-listing-menubar {
+        padding-left: 20px !important;
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
 }

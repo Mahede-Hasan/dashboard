@@ -344,7 +344,9 @@ border-radius: 4px;
     .select-photo {
         padding-bottom: 50px;
         margin:30px auto !important;
-        width: 80% !important;
+        width: 50% !important;
+        border-radius: 50%;
+        background-color: rgba(208, 208, 208, 0.535);
     }
 }
 
@@ -356,7 +358,11 @@ border-radius: 4px;
     }
 
     .select-photo {
-        margin-bottom: 20px;
+        padding-bottom: 50px;
+        margin:30px auto !important;
+        width: 75% !important;
+        border-radius: 50%;
+        background-color: rgba(208, 208, 208, 0.535);
     }
 
     .form-box {
@@ -413,6 +419,14 @@ border-radius: 4px;
 }
 
 @media only screen and (max-width: 720px) and (min-width: 360px) {
+
+    .select-photo {
+        padding-bottom: 120px !important;
+        margin:30px auto !important;
+        width: 320px !important;
+        height: 320px !important;
+        background-color: transparent;
+    }
     .form-box {
         width: 95% !important;
         padding: 0;

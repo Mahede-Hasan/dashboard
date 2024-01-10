@@ -4,23 +4,22 @@ body {
 }
 
 .main-container {
-    margin: 80px 60px;
+    margin: 80px 60px !important;
 }
 
 /* side nav style */
 .navbar-container {
-    width: 300px !important;
+    width: 250px !important;
     height: 350px !important;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-.nav-lists {
-    margin: 0 auto !important;
+.navbar-nav-side{
+    margin: 1px 10px !important;
 }
 
 .nav-lists li {
     list-style: none;
-    width: 100%;
     padding: 10px 10px;
 }
 
@@ -31,7 +30,7 @@ body {
     border-radius: 4px;
 }
 
-.nav-lists li a:hover {
+.nav-lists li:hover a {
     color: white;
     transition: all 1s ease;
 }
@@ -44,12 +43,14 @@ body {
 }
 
 /* side nav button */
-.listing-submit-btn {
+/* old button styles */
+/* .listing-submit-btn {
     border: 2px solid rgb(118, 117, 117);
     color: white;
     background-color: rgb(118, 117, 117);
     border-radius: 4px;
     font-weight: 500;
+    padding: 2px auto !important;
 }
 
 .listing-submit-btn:hover {
@@ -72,7 +73,44 @@ body {
     color: white;
     background-color: rgb(190, 67, 47);
     transition: all 1s ease;
+} */
+
+
+/* new anchor button style here */
+.listing-submit-btn{
+    text-decoration: none;
+    background-color: gray;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    text-align: center;
+    font-weight: 500;
 }
+.listing-submit-btn:hover{
+    background-color: transparent !important;
+    color: gray;
+    transition: all 1s ease;
+}
+
+.dashboard-log-out-btn {
+    border: 2px solid rgb(190, 67, 47);
+    color: rgb(190, 67, 47);
+    font-weight: 600 !important;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dashboard-log-out-btn:hover {
+    border: 2px solid rgb(190, 67, 47);
+    color: white;
+    background-color: rgb(190, 67, 47);
+    transition: all 1s ease;
+}
+
 
 /* side navbar active route */
 
@@ -164,6 +202,7 @@ th{
 
 .table-data-content td{
     padding-left: 0 !important;
+    border-top: 1px solid rgba(195, 195, 195, 0.612);
 }
 
 .pending-content{
@@ -200,6 +239,22 @@ border-radius: 4px;
     margin-left: 24px !important;
 }
 
+.full-form-container{
+    width: 100% !important;
+    padding: 0 50px !important;
+    display: flex;
+}
+.input-container{
+    width: 70% !important;
+}
+
+
+.select-photo {
+    padding-top: 150px;
+    margin-left: 20px !important;
+    width: 30% !important;
+}
+
 .smt-my-profile-area {
     margin-left: 14px;
     margin-right: 14px;
@@ -220,8 +275,10 @@ border-radius: 4px;
     background-color: rgb(94, 94, 94);
     border-radius: 4px;
     color: white;
-    width: 100%;
     font-size: 16px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .form-dashboard-button:hover {
@@ -229,10 +286,6 @@ border-radius: 4px;
     background-color: rgb(186, 186, 186);
     color: black;
     transition: background 1s ease;
-}
-
-.select-photo {
-    padding-top: 60px;
 }
 
 .user-image {
@@ -251,7 +304,7 @@ border-radius: 4px;
 /* announcement page */
 
 .smt-my-announcement {
-    padding: 30px 20px;
+    padding: 0 20px;
     color: rgb(152, 151, 151);
     font-size: 15px;
 }
@@ -275,6 +328,23 @@ border-radius: 4px;
 
     .table-data-content td{
         font-size: 12px;
+    }
+
+    .full-form-container{
+        width: 100% !important;
+        padding: 0 0 !important;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .input-container{
+        width: 90% !important;
+    }
+    
+    
+    .select-photo {
+        padding-bottom: 50px;
+        margin:30px auto !important;
+        width: 80% !important;
     }
 }
 

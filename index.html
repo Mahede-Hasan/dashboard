@@ -88,10 +88,13 @@
 
             <!-- My Listing Area -->
             <section class="container-fluid menuItem px-0" id="my-listing-page">
+
+                <!-- new class added my-listing-menubar -->
                 <nav class="navbar my-listing-menubar navbar-expand-lg shadow-sm rounded-2">
 
                     <!-- My listing menubar -->
                     <div>
+
                         <ul class="smt-nav-listing nav-list navbar-nav me-auto mb-2 mb-lg-0">
 
                             <li class="nav-item`">
@@ -116,6 +119,7 @@
                         </ul>
                     </div>
 
+                    <!-- new class added search-input-container -->
                     <div class="search-input-container">
                         <!-- My listing search place -->
                         <form class="d-flex ms-1" role="search">
@@ -127,6 +131,8 @@
                 </nav>
 
                 <!-- all listing table -->
+
+                <!-- new class added all-listing-container -->
                 <div class="all-listing-container">
                     <table class="table table-striped mt-3 all-listing shadow-sm rounded-1">
 
@@ -142,17 +148,28 @@
                         <!-- table body -->
                         <tbody>
                             <tr class="table-data-content " scope="row">
-                                <td colspan="1" class="my-listing-table-content col-1"><img class="listing-table-img"
-                                        src="images/listing.png" alt=""><span>list</span></td>
+                                <td colspan="1" class="my-listing-table-content col-1">
+
+                                    <!-- new class added listing-table-img -->
+                                    <img class="listing-table-img" src="images/listing.png" alt=""><span>list</span>
+                                </td>
+
                                 <td colspan="1" class="my-listing-table-content col-1 ">
                                     <p class="pt-1">January 4, 2024</p>
                                 </td>
-                                <td colspan="1" class="my-listing-table-content col-1 mb-4"> <span
-                                        class="pending-content fw-semibold">pending</span> </td>
+                                <td colspan="1" class="my-listing-table-content col-1 mb-4">
+
+                                    <!-- new class added pending-content -->
+                                    <span class="pending-content fw-semibold">pending</span>
+                                </td>
+
                                 <td colspan="1" class="my-listing-table-content col-1">
+                                    <!-- new class added my-listing-edit -->
                                     <div class="my-listing-edit"><a class="text-decoration-none text-black fw-semibold"
                                             href=""><img class="edit-icon me-2" src="images/edit-icon.png"
                                                 alt="">Edit</a>
+
+                                        <!-- new class added delete-list -->
                                         <p class="delete-list ">Delete</p>
                                     </div>
                                 </td>
@@ -165,6 +182,8 @@
                 </div>
 
                 <!-- Publish table -->
+
+                <!-- new class added publish-container -->
                 <div class="publish-container">
                     <table class="table table-striped mt-3 publish shadow-sm rounded-1">
 
@@ -203,6 +222,8 @@
                 </div>
 
                 <!-- Pending table -->
+
+                <!-- new class added pending-container -->
                 <div class="pending-container">
                     <table class="table table-striped mt-3 pending shadow-sm rounded-1">
 
@@ -241,6 +262,7 @@
                 </div>
 
                 <!-- Expired table -->
+                <!-- new class added expired-container -->
                 <div class="expired-container">
                     <table class="table table-striped mt-3 expired shadow-sm rounded-1">
 
@@ -265,7 +287,9 @@
                                         class="pending-content fw-semibold">pending</span> </td>
                                 <td colspan="1" class="my-listing-table-content col-1">
                                     <div class="my-listing-edit"><a class="text-decoration-none text-black fw-semibold"
-                                            href=""><img class="edit-icon me-2" src="images/edit-icon.png"
+                                            href="">
+                                            <!-- new class added edit-icon -->
+                                            <img class="edit-icon me-2" src="images/edit-icon.png"
                                                 alt="">Edit</a>
                                         <p class="delete-list ">Delete</p>
                                     </div>
@@ -294,7 +318,10 @@
                                 <h3>My Profile</h3>
                             </div>
 
+                            <!-- new class added full-form-container -->
                             <div class="full-form-container container-fluid">
+
+                                <!-- new class added input-container -->
                                 <div class="input-container container-fluid">
 
                                     <!-- Form Inputs -->
@@ -411,8 +438,10 @@
 
                                 <!-- select photo -->
                                 <div class="select-photo  container-fluid d-flex flex-column align-items-center">
+                                    <!-- new class added user-image -->
                                     <img class="user-image mb-3" src="./images/user.svg" alt="">
                                     <div class="w-50 d-flex justify-content-center border border-1 py-2 mb-5">
+                                        <!-- new class added user-input -->
                                         <input class="user-input" type="file" name="" id="">
                                     </div>
                                 </div>
@@ -430,6 +459,7 @@
 
             <!-- My Favorite List Area -->
             <section class="smt-my-favorite-list w-100 container-fluid mb-4  menuItem" id="my-favorite-page">
+                
                 <div class="favorite-list-content shadow-sm ">
                     <p>Nothing Found</p>
                 </div>
@@ -437,7 +467,7 @@
 
             <!-- My Announcement Area -->
             <section class="smt-my-announcement  container-fluid menuItem" id="my-announcement-page">
-                <div class="favorite-list-content shadow-sm ">
+                <div class="announcement-list-content shadow-sm ">
                     <p>No announcement found</p>
                 </div>
             </section>

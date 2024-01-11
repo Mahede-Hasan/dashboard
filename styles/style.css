@@ -271,7 +271,7 @@ th {
     margin-top: 150px;
     padding-top: 70px;
     margin-left: 20px !important;
-    margin-right: 20px !important;
+    margin-right: 40px !important;
     width: 300px !important;
     height: 300px;
     background-color: rgba(207, 207, 207, 0.775);
@@ -318,7 +318,7 @@ th {
 
 /* favorite list style */
 
-.favorite-list-content {
+.favorite-list-content, .announcement-list-content {
     padding: 30px 20px;
     color: rgb(152, 151, 151);
     font-size: 15px;
@@ -386,7 +386,7 @@ th {
     }
 
 
-    .favorite-list-content{
+    .favorite-list-content, .announcement-list-content{
         width: 92%;
         position: absolute;
         top: 80px;

@@ -134,7 +134,9 @@ body {
 
 #my-profile-page,
 #my-favorite-page,
-#my-announcement-page {
+#my-announcement-page,
+/* id add my-history-page added-second */
+#my-history-page {
     display: none;
 }
 
@@ -318,7 +320,8 @@ th {
 
 /* favorite list style */
 
-.favorite-list-content, .announcement-list-content {
+.favorite-list-content,
+.announcement-list-content {
     padding: 30px 20px;
     color: rgb(152, 151, 151);
     font-size: 15px;
@@ -331,6 +334,32 @@ th {
     color: rgb(152, 151, 151);
     font-size: 15px;
 }
+
+/* history-table-header class start added-second */
+.table-header-container {
+    border-bottom: 2px solid black;
+}
+
+.history-view-btn {
+    width: 100% !important;
+    background-color: rgb(190, 67, 47);
+    padding: 5px 42%;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+    margin: 0 auto !important;
+}
+
+.history-view-btn:hover {
+    background-color: rgb(215, 92, 73);
+    transition: all 1s ease;
+}
+
+/* history-table-header class end */
+
+
 
 
 /* responsive style */
@@ -347,6 +376,26 @@ th {
         border-radius: 10px;
     }
 }
+
+/* start added-second */
+@media only screen and (max-width: 1292px) {
+    .table-history-content {
+        font-size: 10px !important;
+    }
+
+    .history-view-btn {
+        padding: 5px 35%;
+    }
+
+    .smt-my-history {
+        width: 100%;
+        overflow-x: scroll !important;
+        scroll-behavior: smooth;
+        margin-right: 20px !important;
+    }
+}
+
+/* end added-second */
 
 @media only screen and (max-width: 1080px) {
     .smt-nav-listing li a {
@@ -386,7 +435,8 @@ th {
     }
 
 
-    .favorite-list-content, .announcement-list-content{
+    .favorite-list-content,
+    .announcement-list-content {
         width: 92%;
         position: absolute;
         top: 80px;
@@ -404,7 +454,7 @@ th {
         text-decoration-thickness: 1px;
         transition: all 1s ease;
     }
-    
+
     .active {
         text-decoration: underline !important;
         text-underline-offset: 15px !important;
@@ -414,17 +464,18 @@ th {
     .my-listing-menubar {
         display: flex !important;
         flex-direction: column !important;
-        
+
         width: 350px !important;
         padding-bottom: 30px !important;
     }
 
-    .smt-nav-listing{
+    .smt-nav-listing {
         display: flex;
         flex-direction: column;
         justify-content: left !important;
 
     }
+
     .smt-my-profile {
         display: flex;
         flex-direction: column-reverse;
@@ -435,7 +486,7 @@ th {
         padding-bottom: 70px !important;
         margin: 30px auto !important;
         width: 75% !important;
-    
+
     }
 
     .form-box {
@@ -455,6 +506,7 @@ th {
     .nav-lists li a {
         font-size: 12px;
     }
+
     .smt-main-section {
         margin-left: 0px !important;
     }
@@ -482,6 +534,7 @@ th {
         color: rgb(1, 0, 0);
         width: 100%;
     }
+
     .side-nav-icon {
         width: 20px;
         height: 20px;
@@ -502,10 +555,17 @@ th {
     .table-head-content th {
         font-size: 14px !important;
     }
+
     .smt-nav-listing li a {
         font-weight: 600 !important;
         padding: 15px !important;
         font-size: 13px !important;
+    }
+
+    /* history-view-btn class added-second */
+    .history-view-btn {
+        padding: 5px 20% !important;
+        font-size: 8px !important;
     }
 
 }
@@ -563,10 +623,17 @@ th {
         font-size: 12px !important;
     }
 
-    .expired, .pending, .publish, .all-listing {
+    .expired,
+    .pending,
+    .publish,
+    .all-listing {
         width: 800px !important;
     }
-    .expired-container, .all-listing-container,.publish-container, .pending-container{
+
+    .expired-container,
+    .all-listing-container,
+    .publish-container,
+    .pending-container {
         overflow-x: scroll !important;
         scroll-behavior: smooth;
     }

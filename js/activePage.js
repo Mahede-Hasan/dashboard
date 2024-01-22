@@ -14,34 +14,33 @@ const clickMyProfile = () => {
     document.querySelector('#my-listing-page').style.display = 'none'
     document.querySelector('#my-favorite-page').style.display = 'none'
     document.querySelector('#my-announcement-page').style.display = 'none'
+    document.querySelector('#my-profile-page').style.display = 'block'
 
     // my-history-page and my-wallet-page selector added-second
     document.querySelector('#my-history-page').style.display = 'none'
     document.querySelector('#my-wallet-page').style.display = 'none'
-
-    document.querySelector('#my-profile-page').style.display = 'block'
 }
 const clickMyFavorite = () => {
     document.querySelector('#my-listing-page').style.display = 'none'
     document.querySelector('#my-profile-page').style.display = 'none'
     document.querySelector('#my-announcement-page').style.display = 'none'
+    document.querySelector('#my-favorite-page').style.display = 'block'
 
     // my-history-page and my-wallet-page selector added-second
     document.querySelector('#my-history-page').style.display = 'none'
     document.querySelector('#my-wallet-page').style.display = 'none'
 
-    document.querySelector('#my-favorite-page').style.display = 'block'
 }
 const clickMyAnnouncement = () => {
     document.querySelector('#my-listing-page').style.display = 'none'
     document.querySelector('#my-profile-page').style.display = 'none'
     document.querySelector('#my-favorite-page').style.display = 'none'
+    document.querySelector('#my-announcement-page').style.display = 'block'
 
     // my-history-page and my-wallet-page selector added-second
     document.querySelector('#my-history-page').style.display = 'none'
     document.querySelector('#my-wallet-page').style.display = 'none'
 
-    document.querySelector('#my-announcement-page').style.display = 'block'
 }
 
 // clickMyHistory event added-second

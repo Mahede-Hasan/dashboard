@@ -78,7 +78,7 @@
 
                         <!-- Order History (li) Nav Link added-second -->
                         <li onclick="clickMyHistory()" class="nav-item nav-links">
-                            <a class=" d-flex" aria-current="page" href="/#My_History"><span class="pe-3">
+                            <a class=" d-flex" aria-current="page" href="/#My_Order_History"><span class="pe-3">
                                     <!-- svg icon -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                                         class="bi bi-clock-history" viewBox="0 0 16 16">
@@ -89,6 +89,18 @@
                                             d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5" />
                                     </svg>
                                 </span>Order History</a>
+                        </li>
+
+                        <!-- Wallet (li) Nav Link added-second -->
+                        <li onclick="clickMyWallet()" class="nav-item nav-links">
+                            <a class=" d-flex" aria-current="page" href="/#My_Wallet"><span class="pe-3">
+                                    <!-- svg icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                        class="bi bi-wallet" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a2 2 0 0 1-1-.268M1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1" />
+                                    </svg>
+                                </span>Wallet</a>
                         </li>
 
                         <div class="mt-4">
@@ -493,45 +505,128 @@
             <section class="smt-my-history contianer-fluid" id="my-history-page">
                 <table class="table shadow-sm">
                     <thead class="table-header-container">
-                      <tr>
-                        <th class="border  border-light-subtle py-3 px-4 table-history-content" scope="col">Order Number</th>
-                        <th class="border  border-light-subtle py-3 px-4 table-history-content" scope="col">Amount</th>
-                        <th class="border  border-light-subtle py-3 px-4 table-history-content" scope="col">Plan Name</th>
-                        <th class="border  border-light-subtle py-3 px-4 table-history-content" scope="col">Order date</th>
-                        <th class="border  border-light-subtle py-3 px-4 table-history-content" scope="col">Payment Status</th>
-                        <th class="border  border-light-subtle py-3 px-4 table-history-content" scope="col">Payment Receipt</th>
-                      </tr>
+                        <tr>
+                            <th class="border  border-light-subtle  table-history-content" scope="col">Order Number</th>
+                            <th class="border  border-light-subtle  table-history-content" scope="col">Amount</th>
+                            <th class="border  border-light-subtle  table-history-content" scope="col">Plan Name</th>
+                            <th class="border  border-light-subtle  table-history-content" scope="col">Order date</th>
+                            <th class="border  border-light-subtle  table-history-content" scope="col">Payment Status
+                            </th>
+                            <th class="border  border-light-subtle  table-history-content" scope="col">Payment Receipt
+                            </th>
+                        </tr>
                     </thead>
                     <tbody>
 
-                      <tr>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">#1683</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">$0</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">Enterprise</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">October 25, 2023</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">Completed</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content text-center"><a class="history-view-btn" href="">View</a></td>
-                      </tr>
+                        <tr>
+                            <td class="border  border-light-subtle  table-history-content">#1683</td>
+                            <td class="border  border-light-subtle  table-history-content">$0</td>
+                            <td class="border  border-light-subtle  table-history-content">Enterprise</td>
+                            <td class="border  border-light-subtle  table-history-content">October 25, 2023</td>
+                            <td class="border  border-light-subtle  table-history-content">Completed</td>
+                            <td class="border  border-light-subtle  table-history-content text-center"><a
+                                    class="history-view-btn" href="">View</a></td>
+                        </tr>
 
-                      <tr>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">#1480</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">$0</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">Enterprise</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">October 25, 2023</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">Completed</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content text-center"><a class="history-view-btn" href="">View</a></td>
-                      </tr>
+                        <tr>
+                            <td class="border  border-light-subtle  table-history-content">#1480</td>
+                            <td class="border  border-light-subtle  table-history-content">$0</td>
+                            <td class="border  border-light-subtle  table-history-content">Enterprise</td>
+                            <td class="border  border-light-subtle  table-history-content">October 25, 2023</td>
+                            <td class="border  border-light-subtle  table-history-content">Completed</td>
+                            <td class="border  border-light-subtle  table-history-content text-center"><a
+                                    class="history-view-btn" href="">View</a></td>
+                        </tr>
 
-                      <tr>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">#1283</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">$6.47</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">Basic</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">October 12, 2021</td>
-                        <td class="border  border-light-subtle py-3 px-4 table-history-content">Created</td>
-                        <td class="border  border-light-subtle py-3 px-4 text-center"><a class="history-view-btn" href="">View</a></td>
-                      </tr>
+                        <tr>
+                            <td class="border  border-light-subtle  table-history-content">#1283</td>
+                            <td class="border  border-light-subtle  table-history-content">$6.47</td>
+                            <td class="border  border-light-subtle  table-history-content">Basic</td>
+                            <td class="border  border-light-subtle  table-history-content">October 12, 2021</td>
+                            <td class="border  border-light-subtle  table-history-content">Created</td>
+                            <td class="border  border-light-subtle table-history-content text-center"><a
+                                    class="history-view-btn" href="">View</a></td>
+                        </tr>
                     </tbody>
-                  </table>
+                </table>
+            </section>
+
+            <!-- Wallet added-second -->
+            <section class="smt-my-wallet contianer-fluid" id="my-wallet-page">
+                <h1>Wallet</h1>
+                <div class="wallet-box-container">
+                    <div class="available-balance-box wallet-box">
+                        <h2>0</h2>
+                        <h5>Available Balance</h5>
+                    </div>
+                    <div class="earning-box wallet-box">
+                        <h2>0</h2>
+                        <h5>Total Earning</h5>
+                    </div>
+                    <div class="order-box wallet-box">
+                        <h2>0</h2>
+                        <h5>Total Order</h5>
+                    </div>
+                </div>
+                <div class="earning-status">
+                    <div class="earning-status-header pb-2">
+                        <h2 class="pe-2">Earnings</h2>
+                        <p>Fee <span class="fw-bold">10%</span></p>
+                    </div>
+                    <div class="earning-table">
+                        <table class="table">
+                            <thead>
+                              <tr class="earning-status-th">
+                                <th scope="col">ITEMS</th>
+                                <th scope="col">ORDER ID</th>
+                                <th scope="col">DATE</th>
+                                <th scope="col">PRICE</th>
+                                <th scope="col">FEE</th>
+                                <th scope="col">EARNINGS</th>
+                                <th scope="col">STATUS</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="earning-status-td">
+                                <td>EMPTY</td>
+                                <td>EMPTY</td>
+                                <td>EMPTY</td>
+                                <td>EMPTY</td>
+                                <td>EMPTY</td>
+                                <td>EMPTY</td>
+                                <td>EMPTY</td>
+                              </tr> 
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="payout-container">
+                    <div class="payout-history px-4 py-3">
+                        <h3>Payout History</h3>
+                        <div class="payout-table pt-3">
+                            <table class="table">
+                                <thead>
+                                  <tr class="payout-th">
+                                    <th scope="col">AMOUNT</th>
+                                    <th scope="col">PAYOUT METHOD</th>
+                                    <th scope="col">DATE</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="payout-td">
+                                    <td>EMPTY</td>
+                                    <td>EMPTY</td>
+                                    <td>EMPTY</td>
+                                  </tr> 
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                    <div class="payout-method py-3 px-4">
+                        <h3 class="pb-2">Payout Method</h3>
+                        <p class="py-3">No method found</p>
+                    </div>
+                </div>
             </section>
 
         </section>

@@ -6,16 +6,18 @@ const clickMyListing = () => {
     document.querySelector('#my-favorite-page').style.display = 'none'
     document.querySelector('#my-announcement-page').style.display = 'none'
 
-    // my-history-page selector added-second
+    // my-history-page and my-wallet-page selector added-second
     document.querySelector('#my-history-page').style.display = 'none'
+    document.querySelector('#my-wallet-page').style.display = 'none'
 }
 const clickMyProfile = () => {
     document.querySelector('#my-listing-page').style.display = 'none'
     document.querySelector('#my-favorite-page').style.display = 'none'
     document.querySelector('#my-announcement-page').style.display = 'none'
 
-    // my-history-page selector added-second
+    // my-history-page and my-wallet-page selector added-second
     document.querySelector('#my-history-page').style.display = 'none'
+    document.querySelector('#my-wallet-page').style.display = 'none'
 
     document.querySelector('#my-profile-page').style.display = 'block'
 }
@@ -24,8 +26,9 @@ const clickMyFavorite = () => {
     document.querySelector('#my-profile-page').style.display = 'none'
     document.querySelector('#my-announcement-page').style.display = 'none'
 
-    // my-history-page selector added-second
+    // my-history-page and my-wallet-page selector added-second
     document.querySelector('#my-history-page').style.display = 'none'
+    document.querySelector('#my-wallet-page').style.display = 'none'
 
     document.querySelector('#my-favorite-page').style.display = 'block'
 }
@@ -34,8 +37,9 @@ const clickMyAnnouncement = () => {
     document.querySelector('#my-profile-page').style.display = 'none'
     document.querySelector('#my-favorite-page').style.display = 'none'
 
-    // my-history-page selector added-second
+    // my-history-page and my-wallet-page selector added-second
     document.querySelector('#my-history-page').style.display = 'none'
+    document.querySelector('#my-wallet-page').style.display = 'none'
 
     document.querySelector('#my-announcement-page').style.display = 'block'
 }
@@ -46,7 +50,22 @@ const clickMyHistory = () => {
     document.querySelector('#my-profile-page').style.display = 'none'
     document.querySelector('#my-favorite-page').style.display = 'none'
     document.querySelector('#my-announcement-page').style.display = 'none'
+    
+    // my-history-page and my-wallet-page selector added-second
     document.querySelector('#my-history-page').style.display = 'block'
+    document.querySelector('#my-wallet-page').style.display = 'none'
+}
+
+// clickMyHistory event added-second
+const clickMyWallet = () => {
+    document.querySelector('#my-listing-page').style.display = 'none'
+    document.querySelector('#my-profile-page').style.display = 'none'
+    document.querySelector('#my-favorite-page').style.display = 'none'
+    document.querySelector('#my-announcement-page').style.display = 'none'
+
+    // my-history-page and my-wallet-page selector added-second
+    document.querySelector('#my-history-page').style.display = 'none'
+    document.querySelector('#my-wallet-page').style.display = 'block'
 }
 
 // side nav active route
